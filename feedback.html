@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+<header>
+     <h1>Submit Feedback</h1>
+</header>
+ 
+<main>
+
+  <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <br><br>
+        <label>Rate the portal:</label>
+     -   <select>
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+        </select><br><br> 
+        <input type="radio" id="male" name="gender" value="male">
+         <label for="male">male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="fenale">female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">other</label>
+<br><br>
+       
+        <label>Comments:</label><br>
+        <textarea id="cmt" rows="4" cols="40" placeholder="Write your feedback here..."></textarea><br><br>
+
+        <input type="checkbox" id="consent" name="consent" value="agree">
+        <label for="consent">I agree to the terms and condition.</label> <br><br>
+
+        <button type="submit">Submit</button>
+
+  </form>
+    
+</main>
+
+<footer>
+   <p>2025 My Student Portal</p>
+</footer>
+
+<a href="index.html">Back to Home</a>
+
+</body>
+</html>

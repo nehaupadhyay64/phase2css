@@ -1,0 +1,121 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #f9fbff, #eef3ff);
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+header {
+  background: linear-gradient(90deg, #0077ff, #00c6ff);
+  color: black;
+  text-align: center;
+  padding: 2rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 20px 20px;
+}
+header:hover{
+  background:linear-gradient(135deg, #fbc2eb, #a6c1ee) ;
+}
+
+header h1 {
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+main {
+  flex: 1;
+  max-width: 600px;
+  margin: 3rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+main:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 123, 204, 0.3);
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+}
+
+main h2 {
+  color: #0077cc;
+  margin-top: 1.5rem;
+  font-size: 30px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+main p {
+  margin: 0.5rem 0 1.5rem;
+  font-size: 30px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+main a:hover, main p:hover {
+  color: #0056b3;
+  transform: scale(1.03);
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+footer {
+  background:linear-gradient(90deg, #0077ff, #00c6ff);
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+footer:hover{
+  background:  linear-gradient(135deg, #fbc2eb, #a6c1ee);
+}
+a[href="index.html"] {
+  display: block;
+  text-align: center;
+  margin: 1.5rem auto;
+  background: linear-gradient(90deg, #0077ff, #6a11cb);
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  width: fit-content;
+  font-size: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+@media (max-width: 600px) {
+  main {
+    margin: 1.5rem;
+    padding: 1.5rem;
+  }
+}
+a[href="index.html"]:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 30px;
+  }
+  main {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  main h2,
+  main p,
+  a[href="index.html"],
+  footer {
+    font-size: 20px;
+  }
+}
