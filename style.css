@@ -1,0 +1,179 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #e9ecf3, #f6f7fb);
+    color: #222;
+    overflow-x: hidden;
+}
+
+.hero {
+    text-align: center;
+    padding: 70px 25px;
+    background: linear-gradient(135deg, #6a5af9, #a45cf6);
+    color: white;
+    border-radius: 0 0 40px 40px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+.hero:hover{
+  transform: scale(1.03);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.navbar {
+    background: #fff;
+    padding: 18px;
+    margin: 25px auto;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    font-size: 40px;
+}
+.navbar:hover{
+  ransform: scale(1.03);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    padding: 8px 15px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background: linear-gradient(135deg, #7c4dff, #b47cff);
+    color: white;
+    transform: translateY(-3px);
+}
+.intro-card {
+    width: 80%;
+    margin: 40px auto;
+    padding: 40px;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.intro-card h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.intro-card p {
+    font-size: 22px;
+    color: #555;
+}
+
+.projects {
+    width: 50%;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.75);
+    border-radius: 25px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+    text-align: center;
+    transition: 0.3s ease;
+}
+.projects:hover{
+   transform: scale(1.03);
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.projects li {
+    font-size: 24px;
+    padding: 12px;
+    margin: 10px 0;
+}
+
+.projects a {
+    text-decoration: none;
+    color: #6a4df6;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.projects a:hover {
+    color: #8f6cfb;
+    text-shadow: 0 2px 8px rgba(140, 92, 255, 0.3);
+    padding-left: 10px;
+}
+
+
+footer p {
+    text-align: center;
+    padding: 70px 25px;
+    background: linear-gradient(135deg, #6a5af9, #a45cf6);
+    color: white;
+    border-radius: 0 0 30px 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: 0.3s ease;
+    font-size: 40px;
+    margin-bottom: 200px;  
+}
+footer:hover{
+  transform: scale(1.03); 
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navbar {
+        width: 95%;
+    }
+
+    .intro-card,
+    .projects {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+}
